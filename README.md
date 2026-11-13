@@ -14,54 +14,45 @@
 
 ---
 
-### 🔬 Core Philosophy & Focus
-I specialize in **First-Principles Deep Learning Engineering** and **Foundation Model Architecture**. Rather than relying on black-box libraries, I deconstruct and reproduce the mathematical lineage of sequence intelligence from raw tensor mathematics.
+### 🧬 About Me & Research Focus
+I work at the intersection of **First-Principles Deep Learning** and **Computational Cancer Biology / Biochemistry**. 
 
-- 🔭 **Active Research**: Deconstructing the 6 milestone architectures of modern LLMs (BPTT, RoPE, RMSNorm, SwiGLU, GQA, FlashAttention, and DPO).
-- 🧬 **Systems Biology & AI for Science**: Architecting domain-specific transformers, harmonic Fourier periodic embeddings, and graph pathway representations.
-- 📐 **Engineering Standard**: Zero black-box dependencies, dimension-verified tensor hygiene, and analytical gradient matching (`gradcheck` $\le 10^{-10}$).
+Rather than relying on black-box packages, I deconstruct and reproduce the mathematical lineage of sequence intelligence from raw tensor calculus, while applying deep neural architectures to cancer genomics (TCGA datasets) and biomarker adaptation.
 
----
-
-### 🏆 Flagship Research & Engineering Repositories
-
-<table>
-  <tr>
-    <td width="50%">
-      <h3 align="center">⚡ <a href="https://github.com/elham715/first-principles-ai-lab">First-Principles AI Lab</a></h3>
-      <p align="center"><em>From-scratch mathematical reproduction of modern LLM foundations.</em></p>
-      <ul>
-        <li><b>Milestone 01</b>: Elman RNN (1990) with manual analytical BPTT & vanishing gradient proof.</li>
-        <li><b>Milestone 02</b>: Modern LLaMA Core (RoPE, RMSNorm, SwiGLU, GQA).</li>
-        <li><b>Milestone 03</b>: Identity Highway & Pre-LN stability proofs.</li>
-        <li><b>Milestone 04–06</b>: LoRA, DPO Alignment, and Speculative Decoding.</li>
-      </ul>
-      <p align="center"><code>Python</code> • <code>NumPy</code> • <code>PyTorch</code> • <code>Calculus</code></p>
-    </td>
-    <td width="50%">
-      <h3 align="center">🧬 <a href="https://github.com/elham715/neuromet-slm">BioPath-SLM / NeuroMet-SLM</a></h3>
-      <p align="center"><em>Domain-specific multi-expert causal transformer for metabolic modeling.</em></p>
-      <ul>
-        <li>Orthogonal subspace encodings for 3D molecular conformers.</li>
-        <li>Harmonic $2\pi$ Fourier periodic cycle embeddings (Krebs / Urea cycles).</li>
-        <li>Biological pathway graph distance attention.</li>
-      </ul>
-      <p align="center"><code>PyTorch</code> • <code>BioPython</code> • <code>CUDA</code></p>
-    </td>
-  </tr>
-</table>
+- 🔭 **AI Foundations**: Building [`first-principles-ai-lab`](https://github.com/elham715/first-principles-ai-lab) — from-scratch implementations of recurrence, transformers, and alignment.
+- 🧪 **Cancer Genomics & Bio**: Researching deep domain adaptation (DDANN) and gene expression survival profiling on TCGA (The Cancer Genome Atlas) datasets.
+- 📐 **Standard**: Zero black-box dependencies, dimension-verified tensor hygiene, and analytical gradient checks (`gradcheck` $\le 10^{-10}$).
 
 ---
 
-### 🛠️ Technical Stack & Mathematical Foundations
+### 🏆 Research & Engineering Portfolio
+
+#### 1. Foundation Models & Sequence Intelligence
+| Project | Core Focus | Stack | Status |
+|---|---|:---:|:---:|
+| **[First-Principles AI Lab](https://github.com/elham715/first-principles-ai-lab)** | Milestone 01: Elman RNN with manual NumPy BPTT & analytical gradcheck | `Python`, `NumPy` | 🟢 **Completed** |
+| **First-Principles AI Lab** | Milestone 02: Modern LLaMA Core (RoPE, RMSNorm, SwiGLU, GQA) | `PyTorch` | 🟡 **Pending** |
+| **First-Principles AI Lab** | Milestone 03: Identity Highway & Pre-LN stability proofs | `PyTorch` | ⚪ Planned |
+| **First-Principles AI Lab** | Milestone 04–06: LoRA, DPO Alignment, and Speculative Decoding | `PyTorch` | ⚪ Planned |
+
+#### 2. AI in Cancer Genomics & Molecular Biochemistry
+| Project | Research Focus | Domain | Status |
+|---|---|:---:|:---:|
+| **TCGA Cancer Genomics** | Multi-omics expression modeling, mutation analysis & survival prediction on TCGA cohorts | Cancer Biology | 🟡 **Pending** |
+| **DDANN Biomarker Adaptation** | Deep Domain Adaptation / Attention Neural Networks for heterogeneous clinical genomic datasets | Computational Oncology | 🟡 **Pending** |
+| **BioPath-SLM / Metabolic AI** | Representation learning on metabolic reaction networks (Krebs/Urea cycles) and 3D molecular conformers | Biochemistry | 🟡 **Pending** |
+
+---
+
+### 🛠️ Technical Arsenal
 
 <div align="center">
 
 | Domain | Proficiencies |
 |---|---|
-| **Architectures** | Autoregressive Transformers, Elman RNNs, LSTMs, Graphormer, LoRA, MoE, Speculative Decoding |
-| **Mathematics & Theory** | Multivariate Calculus, BPTT Jacobians, Information Theory (MDL / Kolmogorov), Optimization (Adam/SGD) |
-| **Languages & Tools** | Python, PyTorch, NumPy, C++, CUDA (basics), Git, LaTeX, Linux |
+| **AI & Neural Architectures** | Autoregressive Transformers, Elman RNNs, LSTMs, Graph Encodings, LoRA, GQA, BPTT Jacobians |
+| **Biomedical & Genomics** | TCGA multi-omics, Gene Expression Profiling, Cancer Biomarkers, Molecular Pathway Modeling |
+| **Languages & Tools** | Python, PyTorch, NumPy, BioPython, Git, LaTeX, Linux |
 
 </div>
 
@@ -69,7 +60,10 @@ I specialize in **First-Principles Deep Learning Engineering** and **Foundation 
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=elham715&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" width="48%" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=elham715&theme=tokyonight&hide_border=true" width="48%" />
+<!-- GitHub Streak Card -->
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=elham715&theme=tokyonight&hide_border=true" width="49%" />
+
+<!-- Top Languages Card -->
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=elham715&layout=compact&theme=tokyonight&hide_border=true" width="49%" />
 
 </div>
