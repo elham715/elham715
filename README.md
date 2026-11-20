@@ -42,8 +42,9 @@ My technical focus spans the complete evolutionary lineage of modern intelligenc
   * **Paper 03 — Sutskever et al. (2014)** *"Sequence to Sequence Learning"*: Multi-layer LSTM encoder-decoder — *Pending* 🟡  
   * **Paper 04 — Bahdanau et al. (2014)** *"Jointly Learning to Align and Translate"*: Soft additive attention & alignment heatmaps — *Pending* 🟡  
 
-* **Group 02: Modern Transformer Core (6 Papers Unified in One Engine)** — *Planned Roadmap* ⚪  
-  Vaswani et al. (2017) *Attention Is All You Need* + Radford et al. (2019) *GPT-2 Causal Masking* + Zhang & Sennrich (2019) *RMSNorm* + Shazeer (2020) *SwiGLU* + Su et al. (2021) *RoPE 2D Rotations* + Ainslie et al. (2023) *Grouped-Query Attention (GQA)*.
+* **Group 02: Modern Transformer Core (6 Papers Unified in One Engine)** — *In Active Progress* 🟡  
+  * **Radford et al. (2019) *GPT-2 Causal Masking, Pre-LN Residual Stream & KV-Cache*** — *Completed & Verified* 🟢 (`01_gpt2_from_scratch`)  
+  * Vaswani et al. (2017) *Attention Is All You Need* + Zhang & Sennrich (2019) *RMSNorm* + Shazeer (2020) *SwiGLU* + Su et al. (2021) *RoPE 2D Rotations* + Ainslie et al. (2023) *Grouped-Query Attention (GQA)* — *In Progress* 🟡
 
 * **Group 03: Residual Highway & Gradient Stability (4 Papers)** — *Planned Roadmap* ⚪  
   Kaiming He et al. (2015, 2016) *ResNet & Identity Mappings* + Veit et al. (2016) *Shallow Ensemble Proof ($2^L$ paths)* + Xiong et al. (2020) *Pre-LN vs Post-LN Stability* + Wang et al. (2022) *DeepNet 1,000-Layer Scaling*.
@@ -59,15 +60,29 @@ My technical focus spans the complete evolutionary lineage of modern intelligenc
 
 ---
 
-#### 2. Deep Learning & Convolutional Vision (CNNs)
-* **Convolutional Feature Hierarchies (CNNs)** — *Pending / In Progress* 🟡  
-  From-scratch convolution kernels, spatial receptive fields, pooling layers, and AlexNet architectures.
+#### 2. Applied LLM Systems & Mechanistic Interpretability
+*Repository: [`llm-engineering-lab`](https://github.com/elham715/llm-engineering-lab)*
+
+* **Project 01 — GPT-2 (124M) from Scratch in PyTorch** — *Completed & Verified* 🟢  
+  Full autoregressive Transformer (`attention.py`, `block.py`, `model.py`, `generate.py`) with `Conv1D` OpenAI weight transfer, weight tying, KV-cache incremental decoding, and Temperature / Top-K / Top-p sampling.
+* **Project 02 — ChronoSteer Studio (Glass-Box Transformer Steering Playground)** — *Completed & Verified* 🟢  
+  Real-time interactive interpretability UI running locally on CPU (`torch.bfloat16` + speculative WebSocket prefetch): scroll-bounded KV-cache time-travel rewind, Layer-6 contrastive residual steering, pre-softmax Q·K attention biasing, live attention LED rail, 3×3 multiverse tree, and a 360° concentric future-word wheel.
+
+---
+
+#### 3. Deep Learning & Clinical Convolutional Vision (CNNs)
+*Repository: [`biomedical-cnn-lab`](https://github.com/elham715/biomedical-cnn-lab)*
+
+* **COPD Respiratory Acoustic CNN** — *In Active 2-Day Sprint* 🟡  
+  Converting stethoscope recordings (ICBHI 2017 dataset) into 2D Log-Mel Spectrograms and training a 2D CNN with Grad-CAM explainability to diagnose COPD vs. Healthy.
+* **Neuroscience EEG ConvNet (Schirrmeister et al., 2017)** — *In Active 2-Day Sprint* 🟡  
+  Reproducing ShallowConvNet on raw 64-channel PhysioNet EEG brainwaves to decode motor imagery and visualize learned Alpha/Beta cortical frequency filters.
 * **Residual Networks (ResNet)** — *Pending / In Progress* 🟡  
   Identity skip connections ($x + F(x)$) applied to whole-slide histopathology classification.
 
 ---
 
-#### 3. Classical Machine Learning & Statistical Genomics
+#### 4. Classical Machine Learning & Statistical Genomics
 * **Supervised Learning** — *Pending / In Progress* 🟡  
   Lasso ($L_1$), Ridge ($L_2$), Elastic Net, Logistic Regression, Random Forests, and XGBoost for biomarker feature selection and patient survival classification on TCGA cohorts.
 * **Unsupervised Learning** — *Pending / In Progress* 🟡  
@@ -75,7 +90,7 @@ My technical focus spans the complete evolutionary lineage of modern intelligenc
 
 ---
 
-#### 4. Cancer Genomics & Molecular Biochemistry
+#### 5. Cancer Genomics & Molecular Biochemistry
 * **TCGA Multimodal Cancer Modeling** — *Pending / In Progress* 🟡  
   Integrating genomic RNA-seq expression with histology imaging for clinical outcome prediction on The Cancer Genome Atlas (TCGA).
 * **DDANN Biomarker Domain Adaptation** — *Pending / In Progress* 🟡  
@@ -91,10 +106,10 @@ My technical focus spans the complete evolutionary lineage of modern intelligenc
 
 | Domain | Proficiencies |
 |---|---|
-| **Deep Learning & Architectures** | Autoregressive Transformers, Elman RNNs, LSTMs, CNNs, ResNets, LoRA, GQA, BPTT Jacobians |
+| **Deep Learning & Architectures** | Autoregressive Transformers, Elman RNNs, LSTMs, CNNs, ResNets, LoRA, GQA, RoPE, KV-Cache, BPTT Jacobians |
 | **Classical Machine Learning** | Lasso/Ridge Regression, Random Forests, XGBoost, PCA, UMAP, t-SNE, K-Means Clustering |
 | **Genomics & Healthcare** | TCGA Multi-Omics, RNA-seq Expression, Survival Analysis, Gene Biomarker Discovery |
-| **Languages & Tools** | Python, PyTorch, NumPy, Scikit-Learn, SciPy, BioPython, Git, LaTeX, Linux |
+| **Languages & Tools** | Python, PyTorch, NumPy, Scikit-Learn, SciPy, BioPython, Starlette, WebSockets, Git, LaTeX, Linux |
 
 </div>
 
