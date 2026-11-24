@@ -65,19 +65,20 @@ My work focuses on eliminating "black-box wrapper dependencies": building, deriv
 
 ##### A. 🔬 [Mechanistic Attention Disruption in Oncogenic Kinases](https://github.com/elham715/oncogenic-attention-disruption)
 * **Zero-Coordinate Resistance Discovery**: Proves Meta's ESM-2 autonomously detects the fatal Osimertinib resistance mutation **C797S** as the **#2 top disrupted residue** ($\text{ADI} = 9.3 \times 10^{-5}$) and the **Met793 hinge donor** as **#3**, capturing covalent bond loss and allosteric active-site transmission without 3D training labels.
-* **Crystallographic PDB Alignment**: Evaluated against the human EGFR crystal structure (**PDB `2J6M`**), achieving a **0.4464 Spearman rank correlation** between internal ESM-2 attention weights and ground-truth spatial proximity ($1/D_{ij}$ in $\text{\AA}$) across 306 $C_\alpha$ atoms.
+* **Crystallographic PDB Alignment**: Evaluated against the human EGFR crystal structure (**PDB `2J6M`**), achieving a **0.4464 Spearman rank correlation** between internal ESM-2 attention weights and ground-truth spatial proximity ($1/D_{ij}$ in Å) across 306 $C_\alpha$ atoms.
 
 ##### B. 💊 [Bi-modal Cross-Attention for Anticancer Drug Sensitivity](https://github.com/elham715/cross-attention-drug-synergy)
-* **Chemical $\longleftrightarrow$ Pathway Crosstalk**: Modernizing PaccMann (*Cell Reports Methods / IBM Research, 2021*) into a full bi-modal Transformer. Fuses small-molecule inhibitor SMILES with 128 landmark cancer genes partitioned across 8 canonical oncogenic hallmark pathways (`RTK_EGFR`, `PI3K_AKT_MTOR`, `RAS_RAF_MEK_MAPK`, `CELL_CYCLE_CDK`, `DNA_DAMAGE_REPAIR`, `APOPTOSIS_SURVIVAL`, `ANGIOGENESIS`, `EPIGENETIC`).
-* **Performance**: Finished 15-epoch CPU training in **90.8s** with test Spearman $\rho = 0.3123$ and Pearson $r = 0.2997$ across GDSC cell lines.
+* **Chemical ⟷ Pathway Crosstalk**: Modernizing PaccMann (*Cell Reports Methods / IBM Research, 2021*) into a full bi-modal Transformer. Fuses small-molecule inhibitor SMILES with 128 landmark cancer genes partitioned across 8 canonical oncogenic hallmark pathways (`RTK_EGFR`, `PI3K_AKT_MTOR`, `RAS_RAF_MEK_MAPK`, `CELL_CYCLE_CDK`, `DNA_DAMAGE_REPAIR`, `APOPTOSIS_SURVIVAL`, `ANGIOGENESIS`, `EPIGENETIC`).
+* **Performance**: Finished 15-epoch CPU training in **90.8s** with test Spearman rank correlation $\rho = 0.3123$ and Pearson $r = 0.2997$ across GDSC cell lines.
 
 ##### C. 🧬 [RoPE Enformer for Non-Coding Cancer Driver Mutations](https://github.com/elham715/promoter-variant-transformer)
 * **In Silico Saturation Mutagenesis (ISM)**: Models the 512 bp human *TERT* promoter with Rotary Position Embeddings (RoPE), a $4\times$ Enformer-style downsampling stem ($512 \to 128$ bp, $10\times$ CPU speedup), and 4-layer Transformer backbone.
-* **Hotspot Reactivation**: Evaluates all $512 \times 3 = 1,536$ single-nucleotide mutations, accurately capturing the de novo `GGAA` GABP/ETS transcription factor motif creation at canonical hotspot mutations **`C228T`** ($-124\text{ C}>\text{T}$) and **`C250T`** ($-146\text{ C}>\text{T}$).
+* **Hotspot Reactivation**: Evaluates all $512 \times 3 = 1,536$ single-nucleotide mutations, accurately capturing de novo `GGAA` GABP/ETS transcription factor motif creation at canonical hotspot mutations **`C228T`** ($-124\text{ C} \to \text{T}$) and **`C250T`** ($-146\text{ C} \to \text{T}$).
 
 ##### D. ⚡ [Graphormer SPD Attention for Metabolic Networks](https://github.com/elham715/biopath-reaction-transformer)
-* **Geodesic Spatial Bias**: Injects discrete all-pairs Floyd-Warshall Shortest-Path Distance (SPD) matrices into Multi-Head Attention ($\mathbf{A}_{ij} = \frac{\mathbf{q}_i \mathbf{k}_j^T}{\sqrt{d_k}} + \mathbf{B}_{\text{SPD}(i,j)}$) across 25 human metabolites and 16 canonical enzymes.
-* **Oncogenic *IDH1* $R132H$ Neomorphic Shunt**: Trained in **13.0s** on CPU with **Spearman $\rho = 0.9453$** on primary flux and **$\rho = 0.8764$** on oncometabolites, capturing the **$1.81\times$ surge** in 2-hydroxyglutarate (2-HG) accumulation.
+* **Geodesic Spatial Bias**: Injects discrete all-pairs Floyd-Warshall Shortest-Path Distance (SPD) matrices into Multi-Head Attention across 25 human metabolites and 16 canonical enzymes:
+  $$\mathbf{A}_{ij} = \text{Softmax}\left(\frac{\mathbf{q}_i \mathbf{k}_j^T}{\sqrt{d_k}} + \mathbf{B}_{\text{SPD}(i,j)}\right)$$
+* **Oncogenic IDH1 R132H Neomorphic Shunt**: Trained in **13.0s** on CPU with **Spearman $\rho = 0.9453$** on primary flux and **$\rho = 0.8764$** on oncometabolites, capturing the **$1.81\times$ surge** in D-2-hydroxyglutarate (2-HG) accumulation.
 
 ---
 
