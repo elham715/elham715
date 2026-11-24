@@ -1,15 +1,3 @@
-<div align="center">
-
-# Hi, I'm Elham 👋
-### *AI Research Engineer | Foundation Models, Deep Vision & Computational Oncology*
-
-[![GitHub followers](https://img.shields.io/github/followers/elham715?style=for-the-badge&logo=github&color=24292e)](https://github.com/elham715)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com)
-[![Email](https://img.shields.io/badge/Email-elham4ml.ai@gmail.com-EA4335?style=for-the-badge&logo=gmail)](mailto:elham4ml.ai@gmail.com)
-
-```
-"What I cannot create, I do not understand." — Richard Feynman
-```
 
 </div>
 
@@ -17,86 +5,68 @@
 
 ### 🧬 About Me & Research Focus
 
-> **Current Phase**: *I have studied the theoretical foundations of machine learning, deep architectures, and molecular biology. Now, I am focused on strengthening my mastery through rigorous **project-based learning** and first-principles paper reproductions. Below is my structured project roadmap, which I am actively building and filling out step-by-step.*
+I operate at the convergence of **First-Principles LLM Systems Engineering** and **Computational Oncology / Protein Language Models**.
 
-I work at the convergence of **First-Principles Artificial Intelligence** and **Computational Cancer Genomics**.
+My work focuses on eliminating "black-box wrapper dependencies": building, deriving, and mathematically verifying modern deep architectures directly from **tensor calculus and silicon hardware physics** up to **mechanistic post-training alignment**, and grounding attention mechanics in **clinical drug resistance and cancer genomics**.
 
-My technical focus spans the complete evolutionary lineage of modern intelligence: from **Classical Machine Learning** and **Convolutional Neural Networks (CNNs)** to **First-Principles Sequence Models (RNNs / Transformers)**, and their clinical applications in **TCGA cancer genomics**.
-
-- 🔭 **Seminal Paper Reproductions**: Building [`first-principles-ai-lab`](https://github.com/elham715/first-principles-ai-lab) — reproducing 26 foundational papers across 6 milestone engines from raw tensor calculus without external black-box frameworks.
-- 🧪 **Cancer Genomics & Oncology**: High-dimensional RNA-seq expression analysis, Lasso feature selection, and survival modeling across TCGA cancer cohorts.
-- 🔬 **Biomarker Domain Adaptation**: Researching Deep Domain Adaptation (DDANN) for cross-batch clinical genomic harmonization.
-- 📐 **Engineering Standard**: Zero black-box dependencies, dimension-verified tensor hygiene, and analytical gradient checks (`gradcheck` $\le 10^{-10}$).
+- ⚡ **LLM Silicon Systems Engineering**: Building the complete modern Transformer backbone from scratch in pure PyTorch ([`llm-engineering-lab`](https://github.com/elham715/llm-engineering-lab)) — from RoPE 2D complex rotation planes, scale-invariant RMSNorm, and GQA stride broadcasting to LoRA associative matrix memory, DPO closed-form Bradley-Terry loss, and Leviathan speculative decoding.
+- 🔬 **Protein Language Models & Oncology**: Pioneering mechanistic attention disruption in oncogenic kinases ([`oncogenic-attention-disruption`](https://github.com/elham715/oncogenic-attention-disruption)) — proving that Meta's ESM-2 self-attention maps autonomously quantify covalent drug resistance (EGFR C797S / Osimertinib) and align with experimental crystal structures (PDB `2J6M`, $r_s = 0.4464$) without 3D training labels.
+- 📐 **Rigorous Engineering Standard**: Zero external black-box frameworks for core algorithms, verified mathematical invariants (analytical gradchecks $\le 10^{-10}$, step-0 LoRA identity, RMSNorm scale invariance), and 30+ passing unit tests.
 
 ---
 
-### 🏆 Research & Engineering Portfolio
+### 🏆 Featured Research & Engineering Laboratories
 
-#### 1. Seminal Research Paper Reproductions (26 Papers Across 6 Milestone Groups)
-*Repository: [`first-principles-ai-lab`](https://github.com/elham715/first-principles-ai-lab)*
+#### 1. 🧬 Mechanistic Attention Disruption in Oncogenic Kinases
+*Repository: [**`oncogenic-attention-disruption`**](https://github.com/elham715/oncogenic-attention-disruption)* • [![Tests](https://img.shields.io/badge/Tests-9%2F9%20Passing-brightgreen.svg)](https://github.com/elham715/oncogenic-attention-disruption) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-* **Group 01: Sequence Foundations (5 Papers)** — *In Active Progress* 🟡  
-  * **Paper 00 — Elman (1990)** *"Finding Structure in Time"*: Pure NumPy SRN, manual BPTT, analytical gradcheck ($\le 6.93 \times 10^{-11}$), and vanishing gradient proof — *Completed & Verified* 🟢  
-  * **Paper 01 — Hochreiter & Schmidhuber (1997)** *"Long Short-Term Memory"*: Constant Error Carousel (CEC) & additive gating — *In Progress* 🟡  
-  * **Paper 02 — Bengio et al. (2003)** *"A Neural Probabilistic Language Model"*: Distributed word embeddings — *Pending* 🟡  
-  * **Paper 03 — Sutskever et al. (2014)** *"Sequence to Sequence Learning"*: Multi-layer LSTM encoder-decoder — *Pending* 🟡  
-  * **Paper 04 — Bahdanau et al. (2014)** *"Jointly Learning to Align and Translate"*: Soft additive attention & alignment heatmaps — *Pending* 🟡  
+> **Unsupervised quantification of clinical cancer drug resistance in human EGFR kinase via Meta's ESM-2 Transformer Self-Attention:**
 
-* **Group 02: Modern Transformer Core (6 Papers Unified in One Engine)** — *In Active Progress* 🟡  
-  * **Radford et al. (2019) *GPT-2 Causal Masking, Pre-LN Residual Stream & KV-Cache*** — *Completed & Verified* 🟢 (`01_gpt2_from_scratch`)  
-  * Vaswani et al. (2017) *Attention Is All You Need* + Zhang & Sennrich (2019) *RMSNorm* + Shazeer (2020) *SwiGLU* + Su et al. (2021) *RoPE 2D Rotations* + Ainslie et al. (2023) *Grouped-Query Attention (GQA)* — *In Progress* 🟡
+$$\mathbf{A}_{ij} = \text{Softmax}\left(\frac{\mathbf{q}_i \mathbf{k}_j^T}{\sqrt{d_k}}\right), \quad \Delta \mathbf{A} = |\mathbf{A}_{\text{mutant}} - \mathbf{A}_{\text{wildtype}}|$$
 
-* **Group 03: Residual Highway & Gradient Stability (4 Papers)** — *Planned Roadmap* ⚪  
-  Kaiming He et al. (2015, 2016) *ResNet & Identity Mappings* + Veit et al. (2016) *Shallow Ensemble Proof ($2^L$ paths)* + Xiong et al. (2020) *Pre-LN vs Post-LN Stability* + Wang et al. (2022) *DeepNet 1,000-Layer Scaling*.
-
-* **Group 04: Parameter-Efficient Fine-Tuning & Adapters (4 Papers)** — *Planned Roadmap* ⚪  
-  Hu et al. (2021) *LoRA ($\Delta W = BA$)* + Zhang et al. (2023) *LLaMA-Adapter Zero-Init Grafting* + Pfeiffer et al. (2021) *AdapterFusion* + Li et al. (2024) *MixLoRA*.
-
-* **Group 05: Alignment, Scaling & Reasoning (4 Papers)** — *Planned Roadmap* ⚪  
-  Rafailov et al. (2023) *Direct Preference Optimization (DPO)* + Zhou et al. (2023) *LIMA* + Wei et al. (2022) *Chain-of-Thought* + Hoffmann et al. (2022) *Chinchilla Scaling Laws*.
-
-* **Group 06: High-Throughput Inference Systems (3 Papers)** — *Planned Roadmap* ⚪  
-  Dao et al. (2022) *FlashAttention SRAM Tiling* + Leviathan et al. (2022) *Speculative Decoding* + Sheng et al. (2023) *S-LoRA Paged Serving*.
+* **Zero-Coordinate Resistance Discovery**: ESM-2 autonomously pinpoints the fatal Osimertinib resistance mutation **C797S** as the **#2 top disrupted residue** ($\text{ADI} = 9.3 \times 10^{-5}$) and the **Met793 hinge donor** as **#3**, capturing covalent bond loss and allosteric active-site transmission without 3D training coordinates.
+* **Crystallographic PDB Alignment**: Evaluated against the human EGFR crystal structure (**PDB `2J6M`**), achieving a **0.4464 Spearman rank correlation** between internal ESM-2 attention weights and ground-truth spatial proximity ($1/D_{ij}$ in $\text{\AA}$) across 306 $C_\alpha$ atoms.
+* **Production Package**: Full CLI runner (`run_analysis.py`), interactive 1-click tutorial notebook, and 9 verified unit tests.
 
 ---
 
-#### 2. Applied LLM Systems & Mechanistic Interpretability
-*Repository: [`llm-engineering-lab`](https://github.com/elham715/llm-engineering-lab)*
+#### 2. ⚡ LLM Engineering Lab (Silicon Physics to Post-Training)
+*Repository: [**`llm-engineering-lab`**](https://github.com/elham715/llm-engineering-lab)* • [![Tests](https://img.shields.io/badge/Tests-21%2F21%20Passing-brightgreen.svg)](https://github.com/elham715/llm-engineering-lab) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-* **Project 01 — GPT-2 (124M) from Scratch in PyTorch** — *Completed & Verified* 🟢  
-  Full autoregressive Transformer (`attention.py`, `block.py`, `model.py`, `generate.py`) with `Conv1D` OpenAI weight transfer, weight tying, KV-cache incremental decoding, and Temperature / Top-K / Top-p sampling.
-* **Project 02 — ChronoSteer Studio (Glass-Box Transformer Steering Playground)** — *Completed & Verified* 🟢  
-  Real-time interactive interpretability UI running locally on CPU (`torch.bfloat16` + speculative WebSocket prefetch): scroll-bounded KV-cache time-travel rewind, Layer-6 contrastive residual steering, pre-softmax Q·K attention biasing, live attention LED rail, 3×3 multiverse tree, and a 360° concentric future-word wheel.
+> **A zero-black-box systems repository implementing 7 modern LLM engines from scratch in pure PyTorch:**
 
----
-
-#### 3. Deep Learning & Clinical Convolutional Vision (CNNs)
-*Repository: [`biomedical-cnn-lab`](https://github.com/elham715/biomedical-cnn-lab)*
-
-* **COPD Respiratory Acoustic CNN** — *In Active 2-Day Sprint* 🟡  
-  Converting stethoscope recordings (ICBHI 2017 dataset) into 2D Log-Mel Spectrograms and training a 2D CNN with Grad-CAM explainability to diagnose COPD vs. Healthy.
-* **Neuroscience EEG ConvNet (Schirrmeister et al., 2017)** — *In Active 2-Day Sprint* 🟡  
-  Reproducing ShallowConvNet on raw 64-channel PhysioNet EEG brainwaves to decode motor imagery and visualize learned Alpha/Beta cortical frequency filters.
-* **Residual Networks (ResNet)** — *Pending / In Progress* 🟡  
-  Identity skip connections ($x + F(x)$) applied to whole-slide histopathology classification.
+| # | Engine | Mathematical & Systems Core | Status | Verification |
+|---|---|---|:---:|:---:|
+| **01** | [`01_gpt2_from_scratch/`](https://github.com/elham715/llm-engineering-lab/tree/main/01_gpt2_from_scratch) | **Full GPT-2 (124M)**: Causal MHA, `Conv1D` weight transfer from OpenAI checkpoints, weight tying, and Top-K/Top-p sampling. | **Verified** 🟢 | [test_model.py](https://github.com/elham715/llm-engineering-lab/blob/main/01_gpt2_from_scratch/test_model.py) |
+| **02** | [`02_chronosteer_studio/`](https://github.com/elham715/llm-engineering-lab/tree/main/02_chronosteer_studio) | **ChronoSteer Studio**: Real-time interpretability UI (`bfloat16` CPU + WebSockets). Dynamic KV time-travel rewind, Layer-6 contrastive steering, and 360° future-word wheel. | **Verified** 🟢 | Live Web GUI |
+| **03** | [`03_bpe_tokenizer/`](https://github.com/elham715/llm-engineering-lab/tree/main/03_bpe_tokenizer) | **Byte-Level BPE**: 256-byte UTF-8 base vocab, iterative pair frequency counting, regex pre-tokenization, zero `<unk>` guarantee, verified round-trip on Bengali and biochemical sequences. | **Verified** 🟢 | [test_bpe.py](https://github.com/elham715/llm-engineering-lab/blob/main/03_bpe_tokenizer/test_bpe.py) |
+| **04** | [`04_modern_architecture_gqa_rope/`](https://github.com/elham715/llm-engineering-lab/tree/main/04_modern_architecture_gqa_rope) | **LLaMA-3 / Mistral Backbone**: Rotary Position Embeddings (RoPE 2D complex rotation), scale-invariant RMSNorm ($c \cdot x \equiv x$), SwiGLU gating ($\lfloor \frac{8}{3}d \rfloor$), and GQA zero-copy broadcasting. | **Verified** 🟢 | 6/6 Passing |
+| **05** | [`05_lora_peft_from_scratch/`](https://github.com/elham715/llm-engineering-lab/tree/main/05_lora_peft_from_scratch) | **LoRA & QLoRA NF4**: $W_0 + \frac{\alpha}{r} (BA)$ with $B=0$, associative matrix memory trick $(x A^T) B^T$ ($O(r)$ memory), zero-latency weight merging, and 16-quantile NormalFloat4 quantization. | **Verified** 🟢 | 6/6 Passing |
+| **06** | [`06_preference_optimization_dpo/`](https://github.com/elham715/llm-engineering-lab/tree/main/06_preference_optimization_dpo) | **Direct Preference Optimization (DPO)**: Closed-form Bradley-Terry preference loss, analytical partition function $Z(x)$ cancellation, autoregressive target shift (`:-1` vs `1:`), and prompt masking (`-100`). | **Verified** 🟢 | 5/5 Passing |
+| **07** | [`07_inference_kvcache_speculative_decoding/`](https://github.com/elham715/llm-engineering-lab/tree/main/07_inference_kvcache_speculative_decoding) | **High-Throughput Inference Engine**: Dynamic zero-reallocation static KV cache and Leviathan/Chen Speculative Decoding with rejection sampling for $2\times\text{–}3\times$ speedup preserving exact target distribution. | **Verified** 🟢 | 4/4 Passing |
 
 ---
 
-#### 4. Classical Machine Learning & Statistical Genomics
-* **Supervised Learning** — *Pending / In Progress* 🟡  
-  Lasso ($L_1$), Ridge ($L_2$), Elastic Net, Logistic Regression, Random Forests, and XGBoost for biomarker feature selection and patient survival classification on TCGA cohorts.
-* **Unsupervised Learning** — *Pending / In Progress* 🟡  
-  PCA, UMAP, t-SNE, and Hierarchical Clustering for high-dimensional RNA-seq expression analysis and tumor subtype discovery.
+#### 3. 🔬 Seminal Paper Reproductions
+*Repository: [**`first-principles-ai-lab`**](https://github.com/elham715/first-principles-ai-lab)*
+
+* **Sequence Foundations (5 Papers)**:
+  * **Elman (1990)** *"Finding Structure in Time"*: Pure NumPy SRN, manual BPTT, analytical gradcheck ($\le 6.93 \times 10^{-11}$), and vanishing gradient proof — *Completed & Verified* 🟢
+  * **Hochreiter & Schmidhuber (1997)** *"LSTM"*: Constant Error Carousel (CEC) & additive gating — *Completed* 🟢
+  * **Bengio et al. (2003)**, **Sutskever et al. (2014)**, **Bahdanau et al. (2014)** — *In Progress* 🟡
+* **Modern Transformer Core (6 Papers)**:
+  * **Vaswani (2017)** *Attention* + **Radford (2019)** *GPT-2* + **Zhang (2019)** *RMSNorm* + **Shazeer (2020)** *SwiGLU* + **Su (2021)** *RoPE* + **Ainslie (2023)** *GQA* — *Fully Implemented & Verified in `llm-engineering-lab`* 🟢
+* **Alignment & High-Throughput Inference**:
+  * **Rafailov et al. (2023)** *DPO* + **Hu et al. (2021)** *LoRA* + **Leviathan et al. (2022)** *Speculative Decoding* — *Verified* 🟢
 
 ---
 
-#### 5. Cancer Genomics & Molecular Biochemistry
-* **TCGA Multimodal Cancer Modeling** — *Pending / In Progress* 🟡  
-  Integrating genomic RNA-seq expression with histology imaging for clinical outcome prediction on The Cancer Genome Atlas (TCGA).
-* **DDANN Biomarker Domain Adaptation** — *Pending / In Progress* 🟡  
-  Deep Domain Adaptation and Attention Neural Networks for heterogeneous, batch-affected clinical genomic datasets.
-* **BioPath-SLM / Metabolic AI** — *Pending / In Progress* 🟡  
-  Representation learning on biochemical reaction pathways (Krebs and Urea cycles) and 3D molecular structures.
+#### 4. 🩺 Biomedical Vision & Signal Intelligence
+*Repositories: [**`biomedical-cnn-lab`**](https://github.com/elham715/biomedical-cnn-lab) • [**`biomedical-sequence-lab`**](https://github.com/elham715/biomedical-sequence-lab)*
+
+* **COPD Respiratory Acoustic ConvNet**: Converting stethoscope recordings (ICBHI 2017) into 2D Log-Mel Spectrograms with Grad-CAM explainability to classify COPD vs. Healthy.
+* **Neuroscience EEG ShallowConvNet (Schirrmeister et al., 2017)**: Decoding motor imagery from raw 64-channel PhysioNet EEG brainwaves and visualizing learned Alpha/Beta cortical frequency filters.
+* **PaccMann & Oncolytic Peptides**: Multi-modal SMILES $\times$ transcriptomic drug sensitivity modeling and antimicrobial peptide generation.
 
 ---
 
@@ -104,12 +74,13 @@ My technical focus spans the complete evolutionary lineage of modern intelligenc
 
 <div align="center">
 
-| Domain | Proficiencies |
+| Domain | Systems, Tools & Mathematical Foundations |
 |---|---|
-| **Deep Learning & Architectures** | Autoregressive Transformers, Elman RNNs, LSTMs, CNNs, ResNets, LoRA, GQA, RoPE, KV-Cache, BPTT Jacobians |
-| **Classical Machine Learning** | Lasso/Ridge Regression, Random Forests, XGBoost, PCA, UMAP, t-SNE, K-Means Clustering |
-| **Genomics & Healthcare** | TCGA Multi-Omics, RNA-seq Expression, Survival Analysis, Gene Biomarker Discovery |
-| **Languages & Tools** | Python, PyTorch, NumPy, Scikit-Learn, SciPy, BioPython, Starlette, WebSockets, Git, LaTeX, Linux |
+| **Foundation Models & LLM Systems** | Autoregressive Transformers, Causal Attention, RoPE 2D Rotations, GQA, RMSNorm, SwiGLU Gating, LoRA / QLoRA NF4, Static KV-Cache, Speculative Decoding, DPO Alignment |
+| **Protein Language Models & Bio-ML** | Meta ESM-2, Multi-Head Attention Extraction, Perturbation Analysis ($\Delta \mathbf{A}$), Structural Alignment, PDB $C_\alpha$ Euclidean Coordinates, Contact Precision @ $L/5$ |
+| **Deep Learning & Computer Vision** | Elman RNNs, LSTMs, ResNets, 2D Log-Mel Spectrogram CNNs, ShallowConvNet EEG, Grad-CAM Explainability |
+| **Mathematical & Silicon Hygiene** | Analytical Gradients (`gradcheck` $\le 10^{-10}$), BPTT Jacobians, Associative Matrix Contraction, Scale Invariance Invariants, FP32 Numerical Overflow Guards |
+| **Languages, Runtimes & Tooling** | Python, PyTorch, NumPy, SciPy, BioPython, Starlette, WebSockets, Git, Linux, LaTeX |
 
 </div>
 
